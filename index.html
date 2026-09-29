@@ -1,29 +1,114 @@
 <html><head>
-<script nonce="">window['ppConfig'] = {productName: '26981ed0d57bbad37e728ff58134270c', deleteIsEnforced:  false , sealIsEnforced:  false , heartbeatRate:  0.5 , periodicReportingRateMillis:  60000.0 , disableAllReporting:  false };(function(){'use strict';function k(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}function l(a){var b=typeof Symbol!="undefined"&&Symbol.iterator&&a[Symbol.iterator];if(b)return b.call(a);if(typeof a.length=="number")return{next:k(a)};throw Error(String(a)+" is not an iterable or ArrayLike");}var m=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};
-function n(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var p=n(this);function q(a,b){if(b)a:{var c=p;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&m(c,a,{configurable:!0,writable:!0,value:b})}}
-q("Object.is",function(a){return a?a:function(b,c){return b===c?b!==0||1/b===1/c:b!==b&&c!==c}});q("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});
-q("String.prototype.includes",function(a){return a?a:function(b,c){if(this==null)throw new TypeError("The 'this' value for String.prototype.includes must not be null or undefined");if(b instanceof RegExp)throw new TypeError("First argument to String.prototype.includes must not be a regular expression");return this.indexOf(b,c||0)!==-1}});function r(a,b,c){a("https://csp.withgoogle.com/csp/proto/"+encodeURIComponent(b),JSON.stringify(c))}function t(){var a;if((a=window.ppConfig)==null?0:a.disableAllReporting)return function(){};var b,c,d,e;return(e=(b=window)==null?void 0:(c=b.navigator)==null?void 0:(d=c.sendBeacon)==null?void 0:d.bind(navigator))!=null?e:u}function u(a,b){var c=new XMLHttpRequest;c.open("POST",a);c.send(b)}
-function v(){var a=(w=Object.prototype)==null?void 0:w.__lookupGetter__("__proto__"),b=x,c=y;return function(){var d=a.call(this),e,f,g,h;r(c,b,{type:"ACCESS_GET",origin:(f=window.location.origin)!=null?f:"unknown",report:{className:(g=d==null?void 0:(e=d.constructor)==null?void 0:e.name)!=null?g:"unknown",stackTrace:(h=Error().stack)!=null?h:"unknown"}});return d}}
-function z(){var a=(A=Object.prototype)==null?void 0:A.__lookupSetter__("__proto__"),b=x,c=y;return function(d){d=a.call(this,d);var e,f,g,h;r(c,b,{type:"ACCESS_SET",origin:(f=window.location.origin)!=null?f:"unknown",report:{className:(g=d==null?void 0:(e=d.constructor)==null?void 0:e.name)!=null?g:"unknown",stackTrace:(h=Error().stack)!=null?h:"unknown"}});return d}}function B(a,b){C(a.productName,b);setInterval(function(){C(a.productName,b)},a.periodicReportingRateMillis)}
-var D="constructor __defineGetter__ __defineSetter__ hasOwnProperty __lookupGetter__ __lookupSetter__ isPrototypeOf propertyIsEnumerable toString valueOf __proto__ toLocaleString x_ngfn_x".split(" "),E=D.concat,G=navigator.userAgent.match(/Firefox\/([0-9]+)\./),H=(!G||G.length<2?0:Number(G[1])<75)?["toSource"]:[],I;if(H instanceof Array)I=H;else{for(var J=l(H),K,L=[];!(K=J.next()).done;)L.push(K.value);I=L}var M=E.call(D,I),N=[];
-function C(a,b){var c=[],d=l(Object.getOwnPropertyNames(Object.prototype)),e=d.next(),f;try{for(;!e.done;e=d.next()){var g=e.value;M.includes(g)||N.includes(g)||c.push(g)}}finally{e&&!e.done&&(f=d.return)&&f.call(d)}e=Object.prototype;d=[];for(f=0;f<c.length;f++)g=c[f],d[f]={name:g,descriptor:Object.getOwnPropertyDescriptor(Object.prototype,g),type:typeof e[g]};if(d.length!==0){c=l(d);e=c.next();var h;try{for(;!e.done;e=c.next())N.push(e.value.name)}finally{e&&!e.done&&(h=c.return)&&h.call(c)}var F;
-r(b,a,{type:"SEAL",origin:(F=window.location.origin)!=null?F:"unknown",report:{blockers:d}})}};var O=Math.random(),P=t(),Q=window.ppConfig;Q&&(Q.disableAllReporting||Q.deleteIsEnforced&&Q.sealIsEnforced||O<Q.heartbeatRate&&r(P,Q.productName,{origin:window.location.origin,type:"HEARTBEAT"}));var y=t(),R=window.ppConfig;if(R)if(R.deleteIsEnforced)delete Object.prototype.__proto__;else if(!R.disableAllReporting){var x=R.productName;try{var w,A;Object.defineProperty(Object.prototype,"__proto__",{enumerable:!1,get:v(),set:z()})}catch(a){}}
-(function(){var a=t(),b=window.ppConfig;b&&(b.sealIsEnforced?Object.seal(Object.prototype):b.disableAllReporting||(document.readyState!=="loading"?B(b,a):document.addEventListener("DOMContentLoaded",function(){B(b,a)})))})();}).call(this);
-</script><meta name="chromevox" content-script="no">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" nonce=""><link rel="stylesheet" href="/static/macros/client/css/2208734863-mae_html_css_ltr.css">
-<script type="text/javascript" src="/static/macros/client/js/2594299495-warden_bin_i18n_warden.js" nonce=""></script>
-</head>
-<body>
-<table id="warning-bar-table" class="full_size" cellspacing="0" cellpadding="0"><tbody><tr><td><div id="warning" class="warning-bar warning-banner-bar warning-banner-bar-hidden" role="banner" aria-live="assertive" aria-labelledby="warning-text"><div class="warning-banner"><div class="warning-banner-header"><span class="warning-banner-icon"><svg aria-hidden="true" viewbox="0 0 24 24" width="24px" height="24px"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg></span><div class="warning-banner-text" id="warning-text" role="alert">This application was created by a Google Apps Script user</div></div><div class="warning-banner-buttons"><a class="warning-link" href="https://drive.google.com/abuse?id=AAMpA0Rn7weAfv4ezKQUrapedxfHzxffTRj2S3rYHArNnPH_hehvu5AtLyjitgTh3dewYAITvVQQPp7-_4w9JdTq-peQVkpOAPpvDIhq%3A0&amp;docurl=https%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2FAKfycby_ln3ql4aO56lxfeLUH_UziAcZvRzETmL9zqekK0neuz5OHISrr6getE8_-or9E_Tj%2Fexec" target="_blank">Report abuse</a><a class="warning-link" href="https://developers.google.com/apps-script" target="_blank">Learn more</a></div></div><div class="warning-banner-close-icon" tabindex="0" role="button" aria-label="Dismiss"><svg aria-hidden="true" viewbox="0 0 24 24" width="24px" height="24px"><path d="M6.4 19 5 17.6l5.6-5.6L5 6.4 6.4 5l5.6 5.6L17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6Z"></path></svg></div></div></td></tr><tr><td style="height: 100%"><iframe id="sandboxFrame" allow="accelerometer *; autoplay *; camera *; clipboard-read *; clipboard-write *; encrypted-media *; fullscreen *; geolocation *; gyroscope *; local-network-access *; magnetometer *; microphone *; midi *; payment *; picture-in-picture *; screen-wake-lock *; sync-xhr *; usb *; web-share *" sandbox="allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-storage-access-by-user-activation" src="https://n-wr5scpntawcrplxiw6puo2klgnhbtahadirzvky-0lu-script.googleusercontent.com/userCodeAppPanel">
-</iframe>
-</td></tr></tbody></table><script nonce="">
-(function() {
-var el = document.getElementById('sandboxFrame');
-el.onload = function() {
-goog.script.init("\x7b\x22functionNames\x22:\x5b\x22doGet\x22,\x22include\x22\x5d,\x22sandboxMode\x22:\x22IFRAME_SANDBOX\x22,\x22callbackTimeout\x22:390000,\x22deploymentId\x22:\x22AKfycby_ln3ql4aO56lxfeLUH_UziAcZvRzETmL9zqekK0neuz5OHISrr6getE8_-or9E_Tj\x22,\x22eei\x22:\x22\x22,\x22sandboxHost\x22:\x22https:\/\/n-wr5scpntawcrplxiw6puo2klgnhbtahadirzvky-0lu-script.googleusercontent.com\x22,\x22clientSideProperties\x22:\x7b\x22google.script.sandbox.mode\x22:\x22IFRAME_SANDBOX\x22,\x22google.script.use_fetch_for_post_form\x22:true,\x22google.script.host.origin\x22:\x22https:\/\/script.google.com\x22\x7d,\x22actionPrefix\x22:\x22\/macros\/s\/AKfycby_ln3ql4aO56lxfeLUH_UziAcZvRzETmL9zqekK0neuz5OHISrr6getE8_-or9E_Tj\x22,\x22userHtml\x22:\x22\x3cstyle\x3e\\n  html, body \x7b\\n    margin: 0;\\n    padding: 0;\\n    overflow: hidden;\\n    width: 100%;\\n    height: 100%;\\n  \x7d\\n\\n  #container \x7b\\n    margin: 0;\\n    padding: 0;\\n    width: 100vw;\\n    height: 100vh;\\n    display: flex;\\n    justify-content: center;\\n    align-items: center;\\n  \x7d\\n\\n  canvas \x7b\\n    display: block;\\n  \x7d\\n\x3c\\\/style\x3e\\n\x3cscript src\x3d\\\x22https:\/\/cdn.jsdelivr.net\/gh\/st39\/sdk@main\/api.js\\\x22\x3e\x3c\\\/script\x3e\\n\x3cscript src\x3d\\\x22https:\/\/unpkg.com\/@ruffle-rs\/ruffle\\\x22\x3e\x3c\\\/script\x3e\\n\x3cscript\x3e\\nwindow.RufflePlayer \x3d window.RufflePlayer || \x7b\x7d;\\nwindow.RufflePlayer.config \x3d \x7b\\n\\\x22autoplay\\\x22: \\\x22off\\\x22,\\n\\\x22polyfills\\\x22: true,\\n\\\x22letterbox\\\x22: \\\x22on\\\x22,\\n\\\x22backgroundColor\\\x22: null,\\n\\\x22scale\\\x22: \\\x22showAll\\\x22,\\n\\\x22allowFullscreen\\\x22: true,\\n\\\x22forceScale\\\x22: true,\\n\\\x22forceAlign\\\x22: true,\\n\\\x22splashScreen\\\x22: true,\\n\\\x22wmode\\\x22: \\\x22Window\\\x22,\\n\\\x22unmuteOverlay\\\x22: \\\x22hidden\\\x22,\\n\\\x22quality\\\x22: \\\x22high\\\x22 \x7d;\\nwindow.addEventListener(\\\x22load\\\x22, (event) \x3d\x3e \x7b\\nconst ruffle \x3d window.RufflePlayer.newest();\\nconst player \x3d ruffle.createPlayer();\\nconst container \x3d document.getElementById(\\\x22container\\\x22);\\ncontainer.appendChild(player);\\nplayer.load(\\\x22https:\/\/cdn.jsdelivr.net\/gh\/sasa24s\/Sphere-compile@95d1d98dc38a920d02e6bbcf61620501b2bacfcb\/tables\/pvz_9_15.swf\\\x22);\\nplayer.style.width \x3d \\\x22100%\\\x22;\\nplayer.style.height \x3d \\\x22100%\\\x22;\\n\x7d);\\n\x3c\\\/script\x3e\\n\x3cdiv id\x3d\\\x22container\\\x22\x3e\\n\x3c\\\/div\x3e\\n\\n\\n\x3cscript type\x3d\\\x22text\/javascript\\\x22\x3ewindow.SDK_OPTIONS\x3d\x7bgameId:\\\x22r2tzpy9cgrn2u4xgzc9z0zbtvxm16mby\\\x22,onEvent:function(a)\x7bswitch(a.name)\x7bcase\\\x22SDK_GAME_PAUSE\\\x22:break;case\\\x22SDK_GAME_START\\\x22:break;case\\\x22SDK_READY\\\x22:break\x7d\x7d\x7d;(function(a,b,c)\x7bvar d\x3da.getElementsByTagName(b)\x5b0\x5d;a.getElementById(c)||(a\x3da.createElement(b),a.id\x3dc,a.src\x3d\\\x22https:\/\/cdn.jsdelivr.net\/gh\/st39\/sdk@main\/sdkjs.js\\\x22,d.parentNode.insertBefore(a,d))\x7d)(document,\\\x22script\\\x22,\\\x22gamemonetize-sdk\\\x22);\x3c\\\/script\x3e\x3cscript type\x3d\\\x22text\/javascript\\\x22\x3elet isAdShown\x3dfalse;function onClick(e)\x7bif(!isAdShown\x26\x26typeof sdk!\x3d\x3d\x27undefined\x27\x26\x26typeof sdk.showBanner\x3d\x3d\x3d\x27function\x27)\x7bsdk.showBanner();isAdShown\x3dtrue\x7dwindow.removeEventListener(\\\x22click\\\x22,onClick)\x7dwindow.addEventListener(\\\x22click\\\x22,onClick);\x3c\\\/script\x3e\x22,\x22ncc\x22:\x22\x7b\\\x22awhs\\\x22:true\x7d\x22\x7d", "AEDoMFiOrSKp-25mOal1zNEkMVKU:1790643578874", undefined, true , false  , "true", "https:\/\/n-wr5scpntawcrplxiw6puo2klgnhbtahadirzvky-0lu-script.googleusercontent.com", "https:\/\/drive.google.com\/abuse?id\x3dAAMpA0Rn7weAfv4ezKQUrapedxfHzxffTRj2S3rYHArNnPH_hehvu5AtLyjitgTh3dewYAITvVQQPp7-_4w9JdTq-peQVkpOAPpvDIhq%3A0\x26docurl\x3dhttps%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2FAKfycby_ln3ql4aO56lxfeLUH_UziAcZvRzETmL9zqekK0neuz5OHISrr6getE8_-or9E_Tj%2Fexec");}
-el.src = 'https:\/\/n-wr5scpntawcrplxiw6puo2klgnhbtahadirzvky-0lu-script.googleusercontent.com\/userCodeAppPanel';
-}());
-</script>
+    <title>Among Us online</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="manifest" href="appmanifest.json">
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body {
+        background: #000;
+        color: #fff;
+        overflow: hidden;
+        touch-action: none;
+        -ms-touch-action: none;
+      }
+      canvas {
+        touch-action-delay: none;
+        touch-action: none;
+        -ms-touch-action: none;
+      }
+    </style>
+  <script src="offlineClient.js"></script></head>
+
+  <body>
+    <div id="fb-root"></div>
+
+    <script>
+      (function () {
+        if (window.location.protocol.substr(0, 4) === 'file') {
+          alert(
+            "Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)"
+          );
+        }
+      })();
+    </script>
+
+    <div id="c2canvasdiv" style="width: 525px; height: 295px; margin-left: 0px; margin-top: 744px;">
+      <canvas id="c2canvas" width="525" height="295" style="width: 525px; height: 295px;">
+        <h1>Play Among Us</h1>
+        <p>
+          Click
+          <a href="/">here</a>
+        </p>
+      </canvas>
+    <input type="text" id="" autocomplete="off" placeholder="Enter Your Name" title="" spellcheck="false" style="position: absolute; top: 885px; left: 222px; width: 92px; height: 14px; font-size: 0.414583em;"></div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="pathfind.js"></script>
+    <script src="c2runtime.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        cr_createRuntime('c2canvas');
+      });
+
+      // Pause and resume on page becoming visible/invisible
+      function onVisibilityChanged() {
+        if (
+          document.hidden ||
+          document.mozHidden ||
+          document.webkitHidden ||
+          document.msHidden
+        )
+          cr_setSuspended(true);
+        else cr_setSuspended(false);
+      }
+
+      document.addEventListener('visibilitychange', onVisibilityChanged, false);
+      document.addEventListener(
+        'mozvisibilitychange',
+        onVisibilityChanged,
+        false
+      );
+      document.addEventListener(
+        'webkitvisibilitychange',
+        onVisibilityChanged,
+        false
+      );
+      document.addEventListener(
+        'msvisibilitychange',
+        onVisibilityChanged,
+        false
+      );
+
+      function OnRegisterSWError(e) {
+        console.warn('Failed to register service worker: ', e);
+      }
+
+      // Runtime calls this global method when ready to start caching (i.e. after startup).
+      // This registers the service worker which caches resources for offline support.
+      window.C2_RegisterSW = function C2_RegisterSW() {
+        if (!navigator.serviceWorker) return; // no SW support, ignore call
+
+        try {
+          navigator.serviceWorker
+            .register('sw.js', { scope: './' })
+            .then(function (reg) {
+              console.log('Registered service worker on ' + reg.scope);
+            })
+            .catch(OnRegisterSWError);
+        } catch (e) {
+          OnRegisterSWError(e);
+        }
+      };
+    </script>
+    <script defer="" src="./sg.min.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a427436bf84b4306',t:'MTc5MDY0NTg1NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;54bb1b95f13b4d299cf174564c6af2d5&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
 
 
 </body></html>
